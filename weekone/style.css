@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Kanit:ital,wght@1,500&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+body {
+    width: 1440px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: rgb(255, 255, 255);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+}
+.Container {
+    width: 100vw;
+    flex-wrap: wrap;
+    gap: 32px;
+    display: flex;
+    flex-direction: column;
+}
+.Header {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-content: center;
+    flex: 1;
+    margin: 0px;
+    padding: 16px 100px;
+    justify-content: space-between;
+    border-bottom: 0.1rem solid #8b8989;
+    position: relative;
+    width: 100vw;
+}
+img {
+    height: 55px;
+    width: 55px;
+    align-self: flex-start;
+    position: relative;
+}
+.CTA {
+    background-color: #239289;
+    color: white;
+    border-color: #239289;
+    border-radius: 26px;
+    border: 4;
+    display: inline-flex;
+    align-items: center;
+    padding: 12px 24px;
+    justify-content: center;
+    position: relative;
+    height: 48px;
+}
+.CTA:hover {
+    transition: background-color o.3s ease-in-out;
+    border: 4;
+    border-color: #065550;
+    background-color: whitesmoke;
+    color: #065550;
+}
+
+li {
+    list-style: none;
+    font-size: 16px;
+    font-weight: 200;
+    font-style: normal;
+    color: #7a7a7a;
+}
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+#active {
+    border-bottom: 2px solid #239289;
+    border-radius: 4;
+    padding-bottom: 2px;
+    font-weight: 500;
+    color: rgb(7, 7, 7);
+}
+#active:hover {
+    font-weight: 500;
+    color: #239289;
+}
+
+#inactive:hover {
+    font-weight: 500;
+    color: #239289;
+}
+.Hero-section-text {
+    display: inline-flex;
+    flex-direction: column;
+    margin: 0px;
+    margin-left: 100px;
+    gap: 16px;
+    padding: 0px;
+    align-items: flex-start;
+    padding-top: 80px;
+    position: relative;
+    max-width: 500px;
+    float: left;
+}
+.Hero-section-text h1 {
+    margin: 0px;
+    padding: 0px;
+    line-height: 72px;
+    font-size: 60px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    color: #141414;
+    font-style: normal;
+}
+.Hero-section-text p {
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+    text-align: justify;
+}
+.Hero-section-image {
+    height: 650px;
+    position: absolute;
+    width: 450px;
+    margin-right: 150px;
+    margin-left: 730px;
+    float: right;
+    margin-top: 100px;
+
+}
+.floating-items1 {
+    display: inline-flex;
+    flex-direction: column;
+    margin-top: 270px;
+    margin-left: 620px;
+    border-radius: 4px;
+    box-shadow: 0px 2px 4px -2px rgba(0, 0, 0, 0.04), 0px 4px 8px -2px rgba(0, 0, 0, 0.08);
+    background-color: #c9f8f8;
+    padding: 16px 24px;
+    gap: 8px;
+    position: absolute;
+}
+.floating-items1:hover {
+ transition: background-color o.3s ease-in-out;
+ background-color: #6bfa6b;   
+}
+#item-1 {
+    height: 10px;
+    border-radius: 8px;
+    width: 120px;
+    background-color: #1C8A81;
+    position: relative;
+}
+#item-2 {
+    height: 10px;
+    border-radius: 8px;
+    width: 160px;
+    background-color: #AD8C00;
+    position: relative;
+}
+#item-3 {
+    height: 10px;
+    border-radius: 8px;
+    width: 200px;
+    background-color: #555555;
+    position: relative;
+}
+#item-4 {
+    height: 24px;
+    width: 24px;
+    border-radius: 49px;
+    background-color: #f8d7d7;
+    position: absolute;
+    top: -7px;
+    left: -4px;
+    align-content: center;
+}
+#item-4 img {
+    height: 16px;
+    width: 16px;
+    position: relative;
+    align-items: center;
+}
+.floating-items2 {
+    display: inline-flex;
+    flex-direction: column;
+    margin-top: 120px;
+    margin-left: 1020px;
+    border-radius: 4px;
+    box-shadow: 0px 2px 4px -2px rgba(0, 0, 0, 0.04), 0px 4px 8px -2px rgba(0, 0, 0, 0.08);
+    background-color: #c9f8f8;
+    padding: 16px 24px;
+    gap: 8px;
+    position: absolute;
+}
+.floating-items2:hover {
+ transition: background-color o.3s ease-in-out;
+ background-color: #6bfa6b;   
+}
+.card-container {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    align-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+    margin-top: 48px;
+}
+.card-1 {
+    height: 200px;
+    width: 350px;
+    border-radius: 24px;
+    background: linear-gradient(12deg, #DDE2E2 -4.5%, rgba(243, 246, 246, 0.96) 62.32%, rgba(227, 231, 232, 0.93) 89.23%);
+    color: #141414;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+.card-1:hover{
+ transition: background-color o.5s ease-in-out;
+ background: #f8d599;   
+}
+.card-text {
+    display: inline-flex;
+    flex-direction: column;
+    margin-top: 48px;
+    gap: 16px;
+    padding-left: 24px;
+    position: relative;
+    max-width: 200px;
+    align-self: center;
+    justify-content: center;
+    text-align: justify;
+}
+.card-text h3 {
+    padding: 0px;
+    margin: 0px;
+    text-align: start;
+}
+.card-text p {
+    padding: 0px;
+    margin: 0px; 
+text-align: start;}
+
+.floating-card-1 {
+    height: 84px;
+    width: 84px;
+    border-radius: 8px;
+    display: inline-flex;
+    margin-top: 16px;
+    margin-right: 16px;
+    margin-left: 48px;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+    position: absolute;
+    background: linear-gradient(10deg, #9A6508 -6.17%, #D99314 62.7%, #FEA70B 107.17%);
+}
+.floating-card-1  img {
+    height: 48px;
+    width: 48px;
+    color: #DDE2E2;
+    align-self: center;
+    align-content: center;
+    justify-self: center;
+    position: relative;
+    padding: 0px;
+    margin: 16px;
+}
+.card-2 {
+    height: 200px;
+    width: 350px;
+    border-radius: 24px;
+    background: linear-gradient(7deg, #222E2F -9.91%, #0D1D1E 60.22%, #222B2B 105.5%);
+    color: #ffffff;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+.card-2:hover{
+ transition: background-color o.5s ease-in-out;
+ background: #223838;   
+}
+.floating-card-2 {
+    height: 84px;
+    width: 84px;
+    border-radius: 8px;
+    display: inline-flex;
+    margin-top: 16px;
+    margin-right: 16px;
+    margin-left: 48px;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+    position: absolute;
+    background: linear-gradient(333deg, #292D2D -21.88%, #1E2223 8.35%, #5E6161 96.71%);
+    box-shadow: 0px 4.137px 6.205px -2.068px rgba(0, 0, 0, 0.06), 0px 12.41px 16.547px -4.137px rgba(0, 0, 0, 0.10);
+    backdrop-filter: blur(8.273503303527832px);
+}
+.floating-card-2  img {
+    height: 48px;
+    width: 48px;
+    color: #DDE2E2;
+    align-self: center;
+    align-content: center;
+    justify-self: center;
+    position: relative;
+    padding: 0px;
+    margin: 16px;
+}
+.card-3 {
+    height: 200px;
+    width: 350px;
+    border-radius: 24px;
+    background: linear-gradient(12deg, #033B3E -4.5%, rgba(12, 148, 154, 0.96) 60.07%, rgba(24, 212, 220, 0.93) 101.75%);
+    color: #ffffff;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+.card-3:hover{
+ transition: background-color o.5s ease-in-out;
+ background: #023235;   
+}
+.floating-card-3 {
+    height: 84px;
+    width: 84px;
+    border-radius: 8px;
+    display: inline-flex;
+    margin-top: 16px;
+    margin-right: 16px;
+    margin-left: 48px;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+    position: absolute;
+    background: linear-gradient(10deg, #045E62 -6.17%, rgba(18, 174, 181, 0.96) 62.7%, rgba(0, 222, 232, 0.93) 107.17%);
+    box-shadow: 0px 4.137px 6.205px -2.068px rgba(0, 0, 0, 0.06), 0px 12.41px 16.547px -4.137px rgba(0, 0, 0, 0.10);
+    backdrop-filter: blur(8.273503303527832px);
+}
+.floating-card-3  img {
+    height: 48px;
+    width: 48px;
+    color: #DDE2E2;
+    align-self: center;
+    align-content: center;
+    justify-self: center;
+    position: relative;
+    padding: 0px;
+    margin: 16px;
+}
