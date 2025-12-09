@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    width: 1440px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: rgb(236, 234, 234);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0px;
+    padding: 0px;
+}
+.product_container{
+    align-content: center;
+    max-width: inherit;
+    max-height: inherit;
+    margin: 0;
+    padding: 0;
+    background-color: #ff550c;
+    color: aliceblue;
+}
+span{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.product_container h2{
+    font-weight: 600px;
+    padding-left: 24px;
+}
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    padding: 20px;
+}
+.product_cards{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    text-align: justify;
+    align-items: flex-start;
+    margin: 0;
+    padding: 16px;
+    gap: 16px;
+    background: #000000;
+    border-radius: 10px;
+    padding: 16px;
+    text-align: center;
+    border: 2px solid #ffffff;
+}
+.product_cards img {
+    width: 100%;
+    height: inherit;
+    border-radius: 16px;
+    margin: 0;
+    padding: 0;
+}
+.product_cards:hover{
+    transform: scale(0.95);
+}
+.product_cards h4 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+.product_cards p {
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: justify;
+    margin: 0;
+    padding: 0;
+}
+.price {
+    font-weight: bold;
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+}
+.cta{
+    background-color: #ff550c;
+    color: inherit;
+    border-color: #f8f8f8;
+    border-radius: 12px;
+    border: 6;
+    display: inline-flex;
+    align-items: center;
+    padding: 12px 24px;
+    justify-content: center;
+    position: relative;
+    font-weight: 600;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+@media (max-width: 1024px) {
+    .products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 768px) {
+    .products {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
